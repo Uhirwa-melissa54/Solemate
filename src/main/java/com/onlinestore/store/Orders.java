@@ -1,7 +1,10 @@
 package com.onlinestore.store;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class Orders {
-    private Payment pay;
+    private final Payment pay;
 
     Orders(Payment pay){
         this.pay=pay;
